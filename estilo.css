@@ -38,8 +38,8 @@ nav a:hover {
     color: #ccc;
 }
 
-/* Estilos para la Sección Principal */
-section {
+/* Estilos para la Sección de Inicio */
+#inicio {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #fff;
@@ -48,16 +48,22 @@ section {
     border-radius: 5px; /* Esquinas redondeadas */
 }
 
-h2 {
+#inicio h2 {
     margin-top: 0;
     color: #ff6666; /* Título con color rojo claro */
 }
 
 /* Estilos para la Portada */
-.description {
+.portada {
     padding: 20px;
     border: 1px solid #ff9999; /* Marco rojo más claro */
     border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #f9f9f9; /* Fondo ligeramente claro */
+}
+
+.portada h2 {
+    margin-top: 0;
+    color: #ff3333; /* Título con color rojo */
 }
 
 .features {
