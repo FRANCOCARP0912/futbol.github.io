@@ -44,7 +44,7 @@ section {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: 1px solid #e6e6e6; /* Marco en la sección principal */
+    border: 1px solid #e6e6e6;
 }
 
 h2 {
@@ -54,7 +54,7 @@ h2 {
 /* Estilos para la Portada */
 .description {
     padding: 20px;
-    border: 1px solid #e6e6e6; /* Marco en la descripción */
+    border: 1px solid #e6e6e6;
 }
 
 .features {
@@ -76,8 +76,8 @@ h2 {
 /* Estilos para el Formulario de Contacto */
 form {
     padding: 20px;
-    border: 1px solid #e6e6e6; /* Marco en el formulario */
-    background-color: #f9f9f9; /* Fondo ligeramente claro */
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
 }
 
 label {
@@ -94,7 +94,7 @@ input, textarea {
 }
 
 button[type="submit"] {
-    background-color: #660033; /* Color rojizo */
+    background-color: #660033;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -103,19 +103,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #7a0c5e; /* Color rojizo más oscuro al pasar el mouse */
+    background-color: #7a0c5e;
 }
 
-/* Corrección para el input de teléfono */
-input[name="Numero de telefono"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Corrección para el textarea */
+/* Correcciones para Inputs y Textareas */
+input[name="Numero de telefono"],
 textarea[name="mensaje"] {
     width: 100%;
     padding: 10px;
@@ -132,3 +124,4 @@ footer {
     text-align: center;
     clear: both;
 }
+
