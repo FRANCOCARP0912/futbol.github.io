@@ -1,14 +1,16 @@
-/* Estilos Generales */
+/* estilo.css */
+
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff9900; /* Color rojizo */
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -19,57 +21,75 @@ header h1 {
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-}
-
-nav ul li {
-    margin-right: 20px;
+    justify-content: space-around;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #cccccc;
 }
 
-/* Estilos para la Sección de Inicio */
-#inicio {
+section {
     padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff9900; /* Color rojizo */
+}
+
+footer {
+    background-color: #ff9900; /* Color rojizo */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/* Estilos específicos para la página de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
     margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: 1px solid #ffcccc; /* Marco rojo claro */
-    border-radius: 5px; /* Esquinas redondeadas */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#inicio h2 {
-    margin-top: 0;
-    color: #ff6666; /* Título con color rojo claro */
+button[type="submit"] {
+    background-color: #ff9900; /* Color rojizo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Estilos para la Portada */
-.portada {
-    padding: 20px;
-    border: 1px solid #ff9999; /* Marco rojo más claro */
-    border-radius: 5px; /* Esquinas redondeadas */
-    background-color: #f9f9f9; /* Fondo ligeramente claro */
+button[type="submit"]:hover {
+    background-color: #ff6600;
 }
 
-.portada h2 {
-    margin-top: 0;
-    color: #ff3333; /* Título con color rojo */
-}
-
+/* Estilos para la lista de características */
 .features {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .features li {
@@ -78,61 +98,9 @@ nav a:hover {
 
 .features li::before {
     content: "\2022";
-    margin-right: 10px;
-    color: #666;
-}
-
-/* Estilos para el Formulario de Contacto */
-form {
-    padding: 20px;
-    border: 1px solid #ff6666; /* Marco rojo */
-    background-color: #f9f9f9;
-    border-radius: 5px; /* Esquinas redondeadas */
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #ff3333; /* Etiqueta con color rojo */
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ffcccc; /* Bordes rojo claro */
-    border-radius: 5px; /* Esquinas redondeadas */
-}
-
-button[type="submit"] {
-    background-color: #ff3333; /* Botón con color rojo */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #ff6666; /* Botón con color rojo claro al pasar el mouse */
-}
-
-/* Correcciones para Inputs y Textareas */
-input[name="Numero de telefono"],
-textarea[name="mensaje"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ffcccc; /* Bordes rojo claro */
-    border-radius: 5px; /* Esquinas redondeadas */
-}
-
-/* Estilos para el Pie de Página */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-    border-top: 1px solid #ff6666; /* Borde superior rojo claro */
+    color: #ff9900; /* Color rojizo */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
