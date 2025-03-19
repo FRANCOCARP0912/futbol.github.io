@@ -1,16 +1,15 @@
-/* Estilos generales */
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
@@ -20,79 +19,121 @@ header h1 {
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: #ccc;
 }
 
-/* Sección principal */
+/* Estilos para la Sección Principal */
 section {
     padding: 20px;
-    margin: 10px;
+    margin-bottom: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #333;
+    margin-top: 0;
 }
 
-/* Estilo del formulario de contacto */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
+/* Estilos para la Portada */
+.description {
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    font-weight: bold;
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-form input, form textarea {
+.features li {
+    margin-bottom: 10px;
+}
+
+.features li::before {
+    content: "\2022";
+    margin-right: 10px;
+    color: #666;
+}
+
+/* Estilos para el Formulario de Contacto */
+form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-form button {
+button[type="submit"] {
     background-color: #333;
-    color: white;
-    border: none;
+    color: #fff;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #555;
+button[type="submit"]:hover {
+    background-color: #444;
 }
 
-/* Pie de página */
+/* Estilos para el Pie de Página */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
-    color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
 }
 
+/* Corrección para el Formulario de Contacto */
+#Numero\ de\ telefono {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
+/* Corrección para el textarea */
+textarea[name="mennsaje"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
+/* Corrección para el input de teléfono */
+input[name="Numero de telefono"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
