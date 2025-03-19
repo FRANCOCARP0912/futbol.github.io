@@ -38,13 +38,22 @@ nav a:hover {
 section {
     padding: 20px;
     margin: 20px;
+}
+
+.marco {
+    background-color: white;
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%; /* Ajusta el ancho del marco */
+    margin: auto; /* Centra el marco */
+    text-align: justify; /* Justifica el texto */
 }
 
-h2 {
+.marco h2 {
     color: #ff9900; /* Color rojizo */
+    text-align: center; /* Centra el título */
 }
 
 footer {
