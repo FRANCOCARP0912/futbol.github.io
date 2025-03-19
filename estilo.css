@@ -44,6 +44,7 @@ section {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #e6e6e6; /* Marco en la sección principal */
 }
 
 h2 {
@@ -53,6 +54,7 @@ h2 {
 /* Estilos para la Portada */
 .description {
     padding: 20px;
+    border: 1px solid #e6e6e6; /* Marco en la descripción */
 }
 
 .features {
@@ -74,6 +76,8 @@ h2 {
 /* Estilos para el Formulario de Contacto */
 form {
     padding: 20px;
+    border: 1px solid #e6e6e6; /* Marco en el formulario */
+    background-color: #f9f9f9; /* Fondo ligeramente claro */
 }
 
 label {
@@ -90,7 +94,7 @@ input, textarea {
 }
 
 button[type="submit"] {
-    background-color: #333;
+    background-color: #660033; /* Color rojizo */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -99,34 +103,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #444;
-}
-
-/* Estilos para el Pie de Página */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-}
-
-/* Corrección para el Formulario de Contacto */
-#Numero\ de\ telefono {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Corrección para el textarea */
-textarea[name="mennsaje"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #7a0c5e; /* Color rojizo más oscuro al pasar el mouse */
 }
 
 /* Corrección para el input de teléfono */
@@ -136,4 +113,22 @@ input[name="Numero de telefono"] {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+/* Corrección para el textarea */
+textarea[name="mensaje"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para el Pie de Página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
 }
