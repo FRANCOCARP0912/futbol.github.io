@@ -44,17 +44,20 @@ section {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ffcccc; /* Marco rojo claro */
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
 h2 {
     margin-top: 0;
+    color: #ff6666; /* Título con color rojo claro */
 }
 
 /* Estilos para la Portada */
 .description {
     padding: 20px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ff9999; /* Marco rojo más claro */
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
 .features {
@@ -76,25 +79,27 @@ h2 {
 /* Estilos para el Formulario de Contacto */
 form {
     padding: 20px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ff6666; /* Marco rojo */
     background-color: #f9f9f9;
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
 label {
     display: block;
     margin-bottom: 10px;
+    color: #ff3333; /* Etiqueta con color rojo */
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ffcccc; /* Bordes rojo claro */
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
 button[type="submit"] {
-    background-color: #660033;
+    background-color: #ff3333; /* Botón con color rojo */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -103,7 +108,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #7a0c5e;
+    background-color: #ff6666; /* Botón con color rojo claro al pasar el mouse */
 }
 
 /* Correcciones para Inputs y Textareas */
@@ -112,8 +117,8 @@ textarea[name="mensaje"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ffcccc; /* Bordes rojo claro */
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
 /* Estilos para el Pie de Página */
@@ -123,6 +128,5 @@ footer {
     padding: 10px;
     text-align: center;
     clear: both;
+    border-top: 1px solid #ff6666; /* Borde superior rojo claro */
 }
-
-
