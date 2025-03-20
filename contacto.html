@@ -20,7 +20,7 @@
 
     <section>
         <h2>Contáctanos</h2>
-        <p>Si tienes alguna duda o deseas más información, puedes ponerte en contacto con nosotros a través del siguiente formulario:</p>
+        <p>Si tienes alguna duda o deseas más información, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
         <form action="#" method="post">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" required><br><br>
@@ -28,12 +28,18 @@
             <label for="email">Correo electrónico:</label><br>
             <input type="email" id="email" name="email" required><br><br>
 
-            
-            <label for="email">Numero de telefono</label><br>
-            <input type="Numero de telefono" id="Numero de telefono" name="Numero de telefono" required><br><br>
+            <label for="telefono">Número de teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" required><br><br>
 
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name=mennsaje" rows="4" required></textarea><br><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <!-- Agregar un campo CAPTCHA (opcional) -->
+            <label for="captcha">¿Cuánto es 3 + 4?</label><br>
+            <input type="text" id="captcha" name="captcha" required><br><br>
 
             <button type="submit">Enviar</button>
         </form>
@@ -44,5 +50,3 @@
     </footer>
 </body>
 </html>
-
-
