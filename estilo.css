@@ -8,7 +8,7 @@
 /* Fondo general y fuente base */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;  /* Fondo gris claro */
   color: #333;
   line-height: 1.6;
   padding: 20px;
@@ -19,6 +19,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: white;  /* Fondo blanco para las secciones */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Cabecera (Header) */
@@ -27,6 +30,7 @@ header {
   color: white;
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 header h1 {
@@ -66,14 +70,22 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 section p {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  text-align: justify; /* Justifica los párrafos */
 }
 
-/* Estilo para el pie de página (Footer) */
+/* Diseño para cada página específica */
+.inicio, .portada, .contacto {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Pie de página (Footer) */
 footer {
   text-align: center;
   background-color: #333;
