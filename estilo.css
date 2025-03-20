@@ -1,148 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background-color: #b80000; /* Rojo oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff6666; /* Rojo claro */
+}
+
+footer {
+    background-color: #b80000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #2a2a2a; /* Fondo oscuro para secciones */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #8c0000; /* Rojo más oscuro */
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #ccc; /* Color más suave para el texto */
+}
+
+.cta-button {
+    background-color: #b80000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e60000;
+}
+
+/* Information Section with Boxes */
+h2, h3 {
+    color: #ff6666; /* Rojo claro */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+section .overview, section .technologies, section .industries, section .benefits {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 5px solid #b80000; /* Barra lateral roja para mayor énfasis */
+}
+
+section .overview h2,
+section .technologies h2,
+section .industries h2,
+section .benefits h2 {
+    border-bottom: 3px solid #b80000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+section ul li {
+    line-height: 1.6;
+}
+
+/* Form Styles */
+form {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 2px solid #b80000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin: 12px 0 6px;
+    color: #fff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #b80000;
+    border: none;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e60000;
+}
+
+form textarea {
+    resize: vertical;
+    background-color: #444;
+    color: #fff;
+}
+
+form button {
+    background-color: #b80000;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #e60000;
+}
+
 /* Responsive Styles */
-@media (max-width: 1024px) {
-    header h1 {
-        font-size: 32px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .cta-button {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
-
-    section h2 {
-        font-size: 22px;
-    }
-
-    section .overview h2,
-    section .technologies h2,
-    section .industries h2,
-    section .benefits h2 {
-        font-size: 22px;
-    }
-
-    form input, form textarea, form button {
-        font-size: 16px;
-    }
-}
-
-/* Para pantallas más pequeñas (Móviles) */
 @media (max-width: 768px) {
-    /* Título del header */
     header h1 {
         font-size: 28px;
     }
 
-    /* Cambiar el menú de navegación para que sea vertical */
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul li {
+        display: block;
         margin: 10px 0;
     }
 
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    /* Ajustar la sección hero */
     .hero h2 {
         font-size: 28px;
-        line-height: 1.4;
     }
 
     .hero p {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    .cta-button {
         font-size: 18px;
-        padding: 12px 20px;
-    }
-
-    /* Ajuste en las secciones informativas */
-    section h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    section .overview h2,
-    section .technologies h2,
-    section .industries h2,
-    section .benefits h2 {
-        font-size: 20px;
-    }
-
-    /* Asegurar que el contenido dentro de los cuadros no se salga */
-    section ul li {
-        font-size: 14px;
-    }
-
-    /* Ajuste en formularios */
-    form {
-        padding: 15px;
-    }
-
-    form input, form textarea, form button {
-        font-size: 16px;
-    }
-
-    /* Asegurar que los botones sean más grandes */
-    form button, .cta-button {
-        padding: 14px 30px;
-        font-size: 18px;
-    }
-
-    form input[type="text"],
-    form input[type="email"],
-    form input[type="tel"],
-    form textarea {
-        font-size: 16px;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
-}
-
-/* Para pantallas más pequeñas (Extra pequeños) */
-@media (max-width: 480px) {
-    /* Asegurarse de que el texto sea legible */
-    body {
-        font-size: 14px;
-    }
-
-    header h1 {
-        font-size: 26px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-        line-height: 1.3;
-    }
-
-    .hero p {
-        font-size: 14px;
-        line-height: 1.4;
     }
 
     .cta-button {
@@ -151,31 +225,17 @@
     }
 
     section h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     section .overview h2,
     section .technologies h2,
     section .industries h2,
     section .benefits h2 {
-        font-size: 18px;
-    }
-
-    section ul li {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     form input, form textarea, form button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    form button, .cta-button {
         font-size: 16px;
-        padding: 12px 24px;
-    }
-
-    footer p {
-        font-size: 12px;
     }
 }
