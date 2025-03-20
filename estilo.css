@@ -1,241 +1,152 @@
-/* General Styles */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #101010; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-    background-color: #b80000; /* Rojo oscuro */
-    color: #fff;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-header h1 {
+header .logo h1 {
     margin: 0;
-    font-size: 36px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ff6666; /* Rojo claro */
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
-footer {
-    background-color: #b80000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Section Styles */
-section {
+/* Main */
+main {
     padding: 20px;
-    margin: 20px;
-    background-color: #2a2a2a; /* Fondo oscuro para secciones */
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Hero Section */
+/* Sección Hero */
 .hero {
-    background-color: #8c0000; /* Rojo más oscuro */
-    padding: 40px;
-    border-radius: 8px;
+    background-color: #1e40af;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .hero h2 {
-    margin: 0;
-    font-size: 40px;
-    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 20px;
-    margin: 20px 0;
-    color: #ccc; /* Color más suave para el texto */
+/* Sección de Características */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
 }
 
-.cta-button {
-    background-color: #b80000;
-    color: #fff;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 20px;
+.feature {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.cta-button:hover {
-    background-color: #e60000;
+.feature h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
 }
 
-/* Information Section with Boxes */
-h2, h3 {
-    color: #ff6666; /* Rojo claro */
-    font-size: 24px;
+/* Página de Contacto */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-ul {
-    margin-top: 10px;
-}
-
-ul li {
-    margin-bottom: 12px;
-}
-
-section .overview, section .technologies, section .industries, section .benefits {
-    background-color: #333;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    border-left: 5px solid #b80000; /* Barra lateral roja para mayor énfasis */
-}
-
-section .overview h2,
-section .technologies h2,
-section .industries h2,
-section .benefits h2 {
-    border-bottom: 3px solid #b80000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-section ul {
-    padding-left: 20px;
-    font-size: 16px;
-}
-
-section ul li {
-    line-height: 1.6;
-}
-
-/* Form Styles */
-form {
-    background-color: #333;
-    padding: 25px;
-    border-radius: 8px;
-    margin-top: 30px;
-    border: 2px solid #b80000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-form label {
-    display: block;
-    font-size: 18px;
-    margin: 12px 0 6px;
-    color: #fff;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #444;
-    color: #fff;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="submit"] {
-    background-color: #555;
-    color: #fff;
-}
-
-form input[type="submit"] {
-    background-color: #b80000;
+.contact-form button {
+    background-color: #1e40af;
+    color: white;
+    padding: 10px;
     border: none;
-    font-weight: bold;
-}
-
-form input[type="submit"]:hover {
-    background-color: #e60000;
-}
-
-form textarea {
-    resize: vertical;
-    background-color: #444;
-    color: #fff;
-}
-
-form button {
-    background-color: #b80000;
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
 }
 
-form button:hover {
-    background-color: #e60000;
+.contact-form button:hover {
+    background-color: #3b82f6;
 }
 
-/* Responsive Styles */
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
+    header nav ul {
+        display: flex;
+        flex-direction: column;
     }
 
-    nav ul li {
-        display: block;
+    header nav ul li {
         margin: 10px 0;
     }
 
-    .hero h2 {
-        font-size: 28px;
+    .features {
+        grid-template-columns: 1fr;
     }
 
-    .hero p {
-        font-size: 18px;
-    }
-
-    .cta-button {
-        font-size: 16px;
-        padding: 10px 18px;
-    }
-
-    section h2 {
-        font-size: 22px;
-    }
-
-    section .overview h2,
-    section .technologies h2,
-    section .industries h2,
-    section .benefits h2 {
-        font-size: 20px;
-    }
-
-    form input, form textarea, form button {
-        font-size: 16px;
+    .contact-form {
+        padding: 15px;
     }
 }
