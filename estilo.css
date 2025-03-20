@@ -1,100 +1,137 @@
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* ---------------------------- *
+   Reset de Estilos Generales
+* ---------------------------- */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------- *
+   Estilos para el Body y Fondo
+* ---------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto oscuro */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-/* Contenedor principal */
-section {
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Encabezado */
-header {
-    background-color: #000;
-    color: #fff;
     padding: 20px;
+}
+
+/* ---------------------------- *
+   Encabezado y Navegación
+* ---------------------------- */
+
+header {
+    background-color: #000; /* Fondo negro */
+    color: #fff;
     text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #f44336; /* Rojo brillante al pasar el cursor */
 }
 
-/* Títulos */
-h2 {
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 20px;
+/* ---------------------------- *
+   Sección Principal: Formulario de Contacto
+* ---------------------------- */
+
+section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
     text-align: center;
 }
 
-/* Estilos del formulario */
+h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------- *
+   Estilos del Formulario
+* ---------------------------- */
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px; /* Espaciado entre los elementos */
 }
 
 label {
     font-size: 16px;
-    margin-bottom: 8px;
-    color: #000;
-    text-align: center;
+    color: #333;
+    text-align: left;
+    width: 100%;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
-    border-color: #f44336; /* Rojo en el foco */
+/* Efectos de foco en los campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #f44336; /* Rojo brillante */
     outline: none;
 }
 
+/* Estilo para el botón de envío */
 button {
     background-color: #f44336; /* Rojo */
     color: #fff;
@@ -102,37 +139,64 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%;
-    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #d32f2f; /* Rojo oscuro al pasar el cursor */
+    background-color: #d32f2f; /* Rojo oscuro */
 }
 
-/* Pie de página */
+/* ---------------------------- *
+   Pie de Página
+* ---------------------------- */
+
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 15px;
     width: 100%;
+    position: fixed;
     bottom: 0;
 }
 
 footer p {
-    margin: 0;
     font-size: 14px;
+    margin: 0;
 }
 
-/* Estilos para la validación y accesibilidad */
+/* ---------------------------- *
+   Estilos de Validación (Opcional)
+* ---------------------------- */
+
 input:invalid {
-    border-color: #e74c3c;
+    border-color: #e74c3c; /* Rojo para campos inválidos */
 }
 
 input:valid {
-    border-color: #2ecc71;
+    border-color: #2ecc71; /* Verde para campos válidos */
+}
+
+/* ---------------------------- *
+   Estilos para Responsividad
+* ---------------------------- */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
