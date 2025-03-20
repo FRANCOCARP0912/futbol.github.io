@@ -1,125 +1,190 @@
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 header {
-    background-color: #333;
+    background-color: #8b0000; /* Rojo oscuro */
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
     font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-h1, h2, h3 {
-    font-family: 'Arial', sans-serif;
 }
 
 footer {
-    background-color: #333;
+    background-color: #8b0000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
-/* Estilos específicos para cada página */
-
-.inicio {
-    background-image: url('inicio-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.portada {
-    background-color: #e0e0e0;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contacto {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contacto form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+/* Section Styles */
+section {
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #333;
+    border-radius: 8px;
 }
 
-.contacto label {
+/* Hero Section */
+.hero {
+    background-color: #5c0000; /* Rojo más oscuro */
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #b30000;
+}
+
+/* Information Section with Boxes */
+h2, h3 {
+    color: #ff6666; /* Color rojo claro */
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+section .overview, section .technologies, section .industries, section .benefits {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #8b0000; /* Cuadro rojo oscuro */
+}
+
+section .overview h2,
+section .technologies h2,
+section .industries h2,
+section .benefits h2 {
+    border-bottom: 2px solid #8b0000;
+    padding-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 2px solid #8b0000;
+}
+
+form label {
     display: block;
+    font-size: 16px;
     margin: 10px 0 5px;
 }
 
-.contacto input, .contacto textarea {
+form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.contacto button {
+    font-size: 16px;
     background-color: #333;
     color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #8b0000;
+    color: #fff;
     padding: 10px 20px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.contacto button:hover {
-    background-color: #575757;
+form button:hover {
+    background-color: #b30000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
