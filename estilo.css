@@ -1,57 +1,84 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fondo claro para todo el cuerpo */
     color: #333;
 }
 
 /* Encabezado */
 header {
-    background-color: #0073e6;
+    background-color: #0073e6; /* Color de fondo azul brillante */
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    border-bottom: 4px solid #005bb5; /* Borde inferior para separar */
 }
 
+header h1 {
+    font-size: 2.5em; /* Título grande */
+    margin: 0;
+}
+
+/* Barra de navegación */
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    background-color: #005bb5; /* Fondo más oscuro para la barra de navegación */
+    margin: 0;
+    border-top: 3px solid #003f73; /* Borde superior */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Alineación horizontal */
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
 }
 
 /* Sección principal */
 section {
     width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    margin: 40px auto; /* Separación más grande de los bordes */
+    padding: 25px;
+    background-color: #ffffff; /* Fondo blanco para la sección */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #0073e6; /* Borde azul para enmarcar */
 }
 
-h2, h3 {
+section h2 {
     color: #0073e6;
+    font-size: 2em; /* Título más grande */
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #0073e6;
+    font-size: 1.5em; /* Subtítulos más pequeños que h2 */
+    margin-bottom: 10px;
 }
 
 ul {
     padding-left: 20px;
+    list-style-type: disc; /* Cambiar los puntos de la lista a círculos */
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px; /* Separación mayor entre los elementos de la lista */
 }
 
 /* Pie de página */
@@ -59,8 +86,45 @@ footer {
     background-color: #0073e6;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: relative;
     bottom: 0;
     width: 100%;
+    border-top: 3px solid #005bb5; /* Borde superior en el pie de página */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos de enlaces en el pie de página */
+footer a {
+    color: #ffcc00; /* Enlaces amarillos */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+    section {
+        width: 95%;  /* Hacer la sección más ancha en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: block; /* Los elementos de navegación se apilan verticalmente */
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em; /* Reducción del tamaño del título en pantallas pequeñas */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Fuente más grande para los enlaces en dispositivos móviles */
+    }
 }
