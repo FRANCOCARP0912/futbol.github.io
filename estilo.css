@@ -1,24 +1,23 @@
-/* Fondo de la página: rojo oscuro */
+/* Fondo general de la página (rojo oscuro) */
 body {
-    background-color: #660000; /* Rojo oscuro */
-    margin: 0;
-    padding: 20px; /* Espacio para que no quede pegado al borde */
+    background-color: #660000;
+    font-family: Arial, sans-serif;
+    padding: 20px;
     display: flex;
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center;    /* Centrar horizontalmente */
-    min-height: 100vh;      /* Asegura que ocupe toda la altura de la ventana */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Aplicar estilo de contenedor a los hijos directos del body */
+/* Aplicar estilo de contenedor a todos los hijos directos del body */
 body > header,
-body > main,
+body > section,
 body > footer {
-    background-color: #ff6666; /* Rojo claro */
+    background-color: #ff6666;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 900px;  /* Ancho máximo para que no se extienda demasiado */
-    padding: 30px;     /* Espacio interno */
-    margin: 10px 0;    /* Espacio entre secciones */
+    margin-bottom: 20px;
 }
-
