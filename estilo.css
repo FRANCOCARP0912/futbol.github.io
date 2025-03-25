@@ -51,7 +51,7 @@ header nav ul li a {
     transition: color 0.3s ease;
 }
 header nav ul li a:hover {
-    color: #990000;
+    color: #ff0000;
 }
 
 /* Secciones de contenido (Inicio y Portada) */
@@ -114,7 +114,7 @@ section ul {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    background-color: #660000;
+    background-color: ##ff0000;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
@@ -122,12 +122,12 @@ section ul {
     transition: background-color 0.3s ease;
 }
 .contact-form button:hover {
-    background-color: #990000;
+    background-color: #ff0000;
 }
 
 /* Footer */
 footer {
-    background-color: #330000;
+    background-color: #ff0000;
     color: #ffebeb;
     text-align: center;
     padding: 20px;
