@@ -9,11 +9,11 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #0056b3; /* Azul más oscuro y sofisticado */
+    background-color: #8b0000; /* Rojo oscuro */
     color: white;
     padding: 40px;
     text-align: center;
-    border-bottom: 5px solid #003f73;
+    border-bottom: 5px solid #660000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
@@ -29,9 +29,9 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #004085;
+    background-color: #660000; /* Rojo oscuro */
     margin: 0;
-    border-top: 4px solid #003f73;
+    border-top: 4px solid #660000;
 }
 
 nav ul li {
@@ -63,18 +63,18 @@ section {
     background-color: #ffffff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
     border-radius: 12px; /* Bordes más redondeados */
-    border: 2px solid #0056b3;
+    border: 2px solid #8b0000; /* Borde rojo oscuro */
 }
 
 section h2 {
-    color: #0056b3;
+    color: #8b0000; /* Rojo oscuro */
     font-size: 2.3em;
     margin-bottom: 20px;
     font-weight: 700; /* Hacer el título más pesado */
 }
 
 section h3 {
-    color: #0056b3;
+    color: #8b0000; /* Rojo oscuro */
     font-size: 1.7em;
     margin-bottom: 12px;
     font-weight: 600;
@@ -99,10 +99,11 @@ li {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid #8b0000; /* Borde rojo oscuro */
 }
 
 #contact h2 {
-    color: #0056b3;
+    color: #8b0000; /* Rojo oscuro */
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
@@ -111,6 +112,7 @@ li {
 #contact form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centrar los elementos dentro del formulario */
 }
 
 #contact input, #contact textarea {
@@ -121,14 +123,16 @@ li {
     border: 1px solid #ccc;
     outline: none;
     transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 500px; /* Limitar el tamaño para que no sea demasiado ancho */
 }
 
 #contact input:focus, #contact textarea:focus {
-    border-color: #0056b3;
+    border-color: #8b0000; /* Rojo oscuro */
 }
 
 #contact button {
-    background-color: #0056b3;
+    background-color: #8b0000; /* Rojo oscuro */
     color: white;
     padding: 15px 20px;
     font-size: 1.2em;
@@ -136,23 +140,25 @@ li {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 500px; /* Limitar el tamaño para que no sea demasiado ancho */
 }
 
 #contact button:hover {
-    background-color: #004085;
+    background-color: #660000; /* Rojo más oscuro */
     transform: scale(1.05);
 }
 
 /* Pie de página */
 footer {
-    background-color: #0056b3;
+    background-color: #8b0000; /* Rojo oscuro */
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 4px solid #003f73;
+    border-top: 4px solid #660000;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
