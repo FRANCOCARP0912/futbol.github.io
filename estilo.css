@@ -1,19 +1,19 @@
 /* Estilos generales */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff6666; /* Fondo suave gris claro */
-    color: #4d4d4d; /* Gris oscuro para texto */
+    background-color: #333333; /* Gris oscuro */
+    color: #dddddd; /* Gris claro para texto */
 }
 
 /* Encabezado */
 header {
-    background-color: #9b2d20; /* Rojo burdeos suave */
+    background-color: #b24d39; /* Rojo suave */
     color: white;
     padding: 40px;
     text-align: center;
-    border-bottom: 5px solid #7b1f12; /* Rojo más oscuro */
+    border-bottom: 5px solid #8c3c2f; /* Rojo más suave */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
@@ -21,7 +21,7 @@ header h1 {
     font-size: 2.8em;
     letter-spacing: 1px;
     margin: 0;
-    text-transform: uppercase; /* Hacer el texto más impactante */
+    text-transform: uppercase;
 }
 
 /* Barra de navegación */
@@ -29,14 +29,14 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #7b1f12; /* Rojo más oscuro */
+    background-color: #8c3c2f; /* Rojo más suave */
     margin: 0;
-    border-top: 4px solid #7b1f12;
+    border-top: 4px solid #8c3c2f;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 25px; /* Espaciado más amplio */
+    margin: 0 25px;
 }
 
 nav ul li a {
@@ -50,9 +50,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4b400; /* Amarillo suave */
+    color: #ffb400; /* Amarillo suave */
     transform: scale(1.1);
-    background-color: rgba(244, 180, 0, 0.2); /* Fondo amarillo suave */
+    background-color: rgba(255, 180, 0, 0.2); /* Fondo amarillo suave */
 }
 
 /* Sección principal */
@@ -60,21 +60,23 @@ section {
     width: 80%;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff; /* Blanco */
+    background-color: #ffffff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
-    border: 2px solid #9b2d20; /* Rojo burdeos suave */
+    border: 2px solid #b24d39; /* Rojo suave */
+}
+
+section h2, section h3 {
+    color: #b24d39; /* Rojo suave */
 }
 
 section h2 {
-    color: #9b2d20; /* Rojo burdeos suave */
     font-size: 2.3em;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 section h3 {
-    color: #9b2d20; /* Rojo burdeos suave */
     font-size: 1.7em;
     margin-bottom: 12px;
     font-weight: 600;
@@ -91,7 +93,7 @@ li {
 
 /* Estilos para la sección de contacto */
 #contact {
-    background-color: #ffffff; /* Fondo blanco para destacar la sección */
+    background-color: #ffffff;
     padding: 40px;
     margin-top: 50px;
     border-radius: 12px;
@@ -99,11 +101,11 @@ li {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #9b2d20; /* Rojo burdeos suave */
+    border: 2px solid #b24d39; /* Rojo suave */
 }
 
 #contact h2 {
-    color: #9b2d20; /* Rojo burdeos suave */
+    color: #b24d39; /* Rojo suave */
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
@@ -128,11 +130,11 @@ li {
 }
 
 #contact input:focus, #contact textarea:focus {
-    border-color: #9b2d20; /* Rojo burdeos suave */
+    border-color: #b24d39; /* Rojo suave */
 }
 
 #contact button {
-    background-color: #9b2d20; /* Rojo burdeos suave */
+    background-color: #b24d39; /* Rojo suave */
     color: white;
     padding: 15px 20px;
     font-size: 1.2em;
@@ -145,20 +147,20 @@ li {
 }
 
 #contact button:hover {
-    background-color: #7b1f12; /* Rojo más oscuro */
+    background-color: #8c3c2f; /* Rojo más suave */
     transform: scale(1.05);
 }
 
 /* Pie de página */
 footer {
-    background-color: #9b2d20; /* Rojo burdeos suave */
+    background-color: #b24d39; /* Rojo suave */
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 4px solid #7b1f12; /* Rojo más oscuro */
+    border-top: 4px solid #8c3c2f; /* Rojo más suave */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
@@ -168,7 +170,7 @@ footer p {
 }
 
 footer a {
-    color: #f4b400; /* Amarillo suave */
+    color: #ffb400; /* Amarillo suave */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -176,7 +178,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: #e6a700; /* Amarillo más suave */
+    color: #ff6666; /* Amarillo más suave */
 }
 
 /* Media Query para dispositivos pequeños */
