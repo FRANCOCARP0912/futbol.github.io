@@ -3,23 +3,23 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
     margin: 0;
     padding: 0;
-    background-color: #ed0707; /* Color de fondo más suave y claro */
-    color: #333;
+    background-color: #f7f7f7; /* Fondo suave gris claro */
+    color: #4d4d4d; /* Gris oscuro para texto */
 }
 
 /* Encabezado */
 header {
-    background-color: #8b0000; /* Rojo oscuro */
+    background-color: #9b2d20; /* Rojo burdeos suave */
     color: white;
     padding: 40px;
     text-align: center;
-    border-bottom: 5px solid #660000;
+    border-bottom: 5px solid #7b1f12; /* Rojo más oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 header h1 {
     font-size: 2.8em;
-    letter-spacing: 1px; /* Un poco de espacio entre letras */
+    letter-spacing: 1px;
     margin: 0;
     text-transform: uppercase; /* Hacer el texto más impactante */
 }
@@ -29,9 +29,9 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #660000; /* Rojo oscuro */
+    background-color: #7b1f12; /* Rojo más oscuro */
     margin: 0;
-    border-top: 4px solid #660000;
+    border-top: 4px solid #7b1f12;
 }
 
 nav ul li {
@@ -45,14 +45,14 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-    padding: 8px 12px; /* Espaciado dentro de los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #f4b400; /* Amarillo suave */
     transform: scale(1.1);
-    background-color: rgba(255, 204, 0, 0.2); /* Fondo ligero al pasar el ratón */
+    background-color: rgba(244, 180, 0, 0.2); /* Fondo amarillo suave */
 }
 
 /* Sección principal */
@@ -60,21 +60,21 @@ section {
     width: 80%;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    border-radius: 12px; /* Bordes más redondeados */
-    border: 2px solid #8b0000; /* Borde rojo oscuro */
+    background-color: #ffffff; /* Blanco */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border: 2px solid #9b2d20; /* Rojo burdeos suave */
 }
 
 section h2 {
-    color: #8b0000; /* Rojo oscuro */
+    color: #9b2d20; /* Rojo burdeos suave */
     font-size: 2.3em;
     margin-bottom: 20px;
-    font-weight: 700; /* Hacer el título más pesado */
+    font-weight: 700;
 }
 
 section h3 {
-    color: #8b0000; /* Rojo oscuro */
+    color: #9b2d20; /* Rojo burdeos suave */
     font-size: 1.7em;
     margin-bottom: 12px;
     font-weight: 600;
@@ -86,7 +86,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px; /* Separación generosa entre elementos */
+    margin-bottom: 15px;
 }
 
 /* Estilos para la sección de contacto */
@@ -99,11 +99,11 @@ li {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #8b0000; /* Borde rojo oscuro */
+    border: 2px solid #9b2d20; /* Rojo burdeos suave */
 }
 
 #contact h2 {
-    color: #8b0000; /* Rojo oscuro */
+    color: #9b2d20; /* Rojo burdeos suave */
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
@@ -112,7 +112,7 @@ li {
 #contact form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar los elementos dentro del formulario */
+    align-items: center;
 }
 
 #contact input, #contact textarea {
@@ -124,15 +124,15 @@ li {
     outline: none;
     transition: border-color 0.3s ease;
     width: 100%;
-    max-width: 500px; /* Limitar el tamaño para que no sea demasiado ancho */
+    max-width: 500px;
 }
 
 #contact input:focus, #contact textarea:focus {
-    border-color: #8b0000; /* Rojo oscuro */
+    border-color: #9b2d20; /* Rojo burdeos suave */
 }
 
 #contact button {
-    background-color: #8b0000; /* Rojo oscuro */
+    background-color: #9b2d20; /* Rojo burdeos suave */
     color: white;
     padding: 15px 20px;
     font-size: 1.2em;
@@ -141,35 +141,34 @@ li {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%;
-    max-width: 500px; /* Limitar el tamaño para que no sea demasiado ancho */
+    max-width: 500px;
 }
 
 #contact button:hover {
-    background-color: #660000; /* Rojo más oscuro */
+    background-color: #7b1f12; /* Rojo más oscuro */
     transform: scale(1.05);
 }
 
 /* Pie de página */
 footer {
-    background-color: #8b0000; /* Rojo oscuro */
+    background-color: #9b2d20; /* Rojo burdeos suave */
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 4px solid #660000;
+    border-top: 4px solid #7b1f12; /* Rojo más oscuro */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 footer p {
     margin: 0;
-    font-size: 1.1em; /* Aumentar tamaño para mayor legibilidad */
+    font-size: 1.1em;
 }
 
-/* Estilos de enlaces en el pie de página */
 footer a {
-    color: #ffcc00;
+    color: #f4b400; /* Amarillo suave */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -177,7 +176,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: #f4d03f; /* Color ligeramente más suave */
+    color: #e6a700; /* Amarillo más suave */
 }
 
 /* Media Query para dispositivos pequeños */
