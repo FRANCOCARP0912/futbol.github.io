@@ -1,24 +1,27 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fondo claro para todo el cuerpo */
+    background-color: #f5f5f5; /* Fondo más suave */
     color: #333;
 }
 
 /* Encabezado */
 header {
-    background-color: #0073e6; /* Color de fondo azul brillante */
+    background-color: #0056b3; /* Azul más oscuro y sofisticado */
     color: white;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
-    border-bottom: 4px solid #005bb5; /* Borde inferior para separar */
+    border-bottom: 5px solid #003f73;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 header h1 {
-    font-size: 2.5em; /* Título grande */
+    font-size: 2.8em;
+    letter-spacing: 1px; /* Un poco de espacio entre letras */
     margin: 0;
+    text-transform: uppercase; /* Hacer el texto más impactante */
 }
 
 /* Barra de navegación */
@@ -26,105 +29,114 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #005bb5; /* Fondo más oscuro para la barra de navegación */
+    background-color: #004085;
     margin: 0;
-    border-top: 3px solid #003f73; /* Borde superior */
+    border-top: 4px solid #003f73;
 }
 
 nav ul li {
-    display: inline-block; /* Alineación horizontal */
-    margin: 0 20px;
+    display: inline-block;
+    margin: 0 25px; /* Espaciado más amplio */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em; /* Tamaño de fuente más grande */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px; /* Espaciado dentro de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Cambio de color al pasar el ratón */
-    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+    color: #ffcc00;
+    transform: scale(1.1);
+    background-color: rgba(255, 204, 0, 0.2); /* Fondo ligero al pasar el ratón */
 }
 
 /* Sección principal */
 section {
     width: 80%;
-    margin: 40px auto; /* Separación más grande de los bordes */
-    padding: 25px;
-    background-color: #ffffff; /* Fondo blanco para la sección */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #0073e6; /* Borde azul para enmarcar */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    border-radius: 12px; /* Bordes más redondeados */
+    border: 2px solid #0056b3;
 }
 
 section h2 {
-    color: #0073e6;
-    font-size: 2em; /* Título más grande */
-    margin-bottom: 15px;
+    color: #0056b3;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+    font-weight: 700; /* Hacer el título más pesado */
 }
 
 section h3 {
-    color: #0073e6;
-    font-size: 1.5em; /* Subtítulos más pequeños que h2 */
-    margin-bottom: 10px;
+    color: #0056b3;
+    font-size: 1.7em;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 ul {
     padding-left: 20px;
-    list-style-type: disc; /* Cambiar los puntos de la lista a círculos */
+    list-style-type: disc;
 }
 
 li {
-    margin-bottom: 12px; /* Separación mayor entre los elementos de la lista */
+    margin-bottom: 15px; /* Separación generosa entre elementos */
 }
 
 /* Pie de página */
 footer {
-    background-color: #0073e6;
+    background-color: #0056b3;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 3px solid #005bb5; /* Borde superior en el pie de página */
+    border-top: 4px solid #003f73;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 footer p {
     margin: 0;
+    font-size: 1.1em; /* Aumentar tamaño para mayor legibilidad */
 }
 
 /* Estilos de enlaces en el pie de página */
 footer a {
-    color: #ffcc00; /* Enlaces amarillos */
+    color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Subrayado en hover */
+    text-decoration: underline;
+    color: #f4d03f; /* Color ligeramente más suave */
 }
 
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
     section {
-        width: 95%;  /* Hacer la sección más ancha en pantallas pequeñas */
-        padding: 20px;
+        width: 90%;
+        padding: 25px;
     }
 
     nav ul li {
-        display: block; /* Los elementos de navegación se apilan verticalmente */
-        margin: 10px 0;
+        display: block;
+        margin: 12px 0;
     }
 
     header h1 {
-        font-size: 2em; /* Reducción del tamaño del título en pantallas pequeñas */
+        font-size: 2.4em;
     }
 
     nav ul li a {
-        font-size: 1.2em; /* Fuente más grande para los enlaces en dispositivos móviles */
+        font-size: 1.3em;
     }
 }
