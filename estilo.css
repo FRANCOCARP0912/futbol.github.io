@@ -3,7 +3,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Fondo más suave */
+    background-color: #eaeaea; /* Color de fondo más suave y claro */
     color: #333;
 }
 
@@ -89,6 +89,60 @@ li {
     margin-bottom: 15px; /* Separación generosa entre elementos */
 }
 
+/* Estilos para la sección de contacto */
+#contact {
+    background-color: #ffffff; /* Fondo blanco para destacar la sección */
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    font-size: 1.2em;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #0056b3;
+}
+
+#contact button {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #004085;
+    transform: scale(1.05);
+}
+
 /* Pie de página */
 footer {
     background-color: #0056b3;
@@ -138,5 +192,19 @@ footer a:hover {
 
     nav ul li a {
         font-size: 1.3em;
+    }
+
+    #contact {
+        width: 90%;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    #contact button {
+        font-size: 1.1em;
+        padding: 12px 18px;
     }
 }
