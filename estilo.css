@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Tipografía y estilos base */
+/* Estilos base para el body */
 body {
+    background-color: #330000;  /* Rojo oscuro profundo */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #400000; /* Rojo oscuro intenso */
-    color: #333;
-    line-height: 1.6;
+    color: #330000;             /* Texto en tono oscuro para buen contraste */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -18,14 +17,14 @@ body {
     min-height: 100vh;
 }
 
-/* Contenedor general para agrupar el contenido principal */
+/* Contenedor general para agrupar el contenido principal de inicio y portada */
 .container {
-    background-color: #ff4d4d; /* Rojo claro vibrante */
+    background-color: #ffebeb;  /* Rojo muy claro, casi pastel */
     width: 100%;
     max-width: 1000px;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 }
 
@@ -36,7 +35,7 @@ header {
 }
 header h1 {
     font-size: 2.5rem;
-    color: #fff;
+    color: #660000;  /* Tono rojo medio para destacar */
     margin-bottom: 10px;
 }
 header nav ul {
@@ -46,32 +45,32 @@ header nav ul {
     gap: 20px;
 }
 header nav ul li a {
-    color: #fff;
+    color: #660000;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 header nav ul li a:hover {
-    color: #ffd6d6;
+    color: #990000;
 }
 
-/* Sección de contenido (Inicio y Portada) */
+/* Secciones de contenido (Inicio y Portada) */
 section {
     margin: 20px 0;
 }
 section h2 {
     font-size: 2rem;
-    color: #fff;
+    color: #660000;
     margin-bottom: 15px;
     text-align: center;
 }
 section h3 {
-    color: #fff;
+    color: #660000;
     margin: 20px 0 10px;
 }
 section p, 
 section ul {
-    color: #222;
+    color: #330000;
     font-size: 1rem;
     margin-bottom: 15px;
 }
@@ -79,19 +78,19 @@ section ul {
     margin-left: 20px;
 }
 
-/* Estilos para formularios (Contacto) */
+/* Página de Contacto */
 .contact-form {
-    background-color: #ff4d4d;
+    background-color: #ffebeb;  /* Mismo fondo claro para mantener coherencia */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     width: 100%;
     max-width: 600px;
     margin: 30px auto;
 }
 .contact-form h2 {
     text-align: center;
-    color: #fff;
+    color: #660000;
     margin-bottom: 20px;
 }
 .contact-form form {
@@ -101,11 +100,58 @@ section ul {
 .contact-form label {
     margin-bottom: 8px;
     font-weight: bold;
-    color: #fff;
+    color: #660000;
 }
 .contact-form input,
 .contact-form textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    margin-bottom:
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #660000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #990000;
+}
+
+/* Footer */
+footer {
+    background-color: #330000;
+    color: #ffebeb;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container, footer {
+        padding: 20px;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+}
