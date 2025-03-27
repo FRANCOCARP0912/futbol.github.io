@@ -94,21 +94,23 @@ li {
 /* Estilos para la sección de contacto */
 #contact {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 50px;
     margin-top: 50px;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    width: 70%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    width: 80%;
+    max-width: 800px; /* Aumentar ancho máximo */
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #b24d39; /* Rojo suave */
+    border: 2px solid #b24d39; /* Mantener el color rojo suave */
 }
 
 #contact h2 {
-    color: #b24d39; /* Rojo suave */
-    font-size: 2.5em;
+    color: #b24d39; /* Mantener el color rojo suave */
+    font-size: 2.6em; /* Tamaño ligeramente mayor */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Mayor espacio debajo del título */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
 }
 
 #contact form {
@@ -118,37 +120,56 @@ li {
 }
 
 #contact input, #contact textarea {
-    font-size: 1.2em;
-    padding: 12px;
+    font-size: 1.1em;
+    padding: 14px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease; /* Transición suave */
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    background-color: #fafafa; /* Fondo suave para los campos */
 }
 
 #contact input:focus, #contact textarea:focus {
     border-color: #b24d39; /* Rojo suave */
+    box-shadow: 0 0 8px rgba(178, 77, 57, 0.5); /* Sombra sutil al enfocar */
 }
 
 #contact button {
     background-color: #b24d39; /* Rojo suave */
     color: white;
-    padding: 15px 20px;
-    font-size: 1.2em;
+    padding: 18px 25px;
+    font-size: 1.3em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contact button:hover {
     background-color: #8c3c2f; /* Rojo más suave */
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de ampliación suave */
+}
+
+#contact button:active {
+    transform: scale(0.98); /* Efecto de pulsación más suave */
+}
+
+@media (max-width: 768px) {
+    #contact {
+        width: 90%;
+    }
+    #contact h2 {
+        font-size: 2.2em;
+    }
+    #contact input, #contact textarea, #contact button {
+        font-size: 1.1em;
+    }
 }
 
 /* Pie de página */
