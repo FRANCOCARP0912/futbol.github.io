@@ -121,20 +121,26 @@ li {
 
 #contact input, #contact textarea {
     font-size: 1.1em;
-    padding: 14px;
+    padding: 18px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid #ccc;
     outline: none;
     transition: all 0.3s ease; /* Transición suave */
     width: 100%;
     max-width: 600px;
     background-color: #fafafa; /* Fondo suave para los campos */
+    box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
 }
 
 #contact input:focus, #contact textarea:focus {
     border-color: #b24d39; /* Rojo suave */
     box-shadow: 0 0 8px rgba(178, 77, 57, 0.5); /* Sombra sutil al enfocar */
+}
+
+#contact textarea {
+    resize: vertical; /* Permite que el usuario ajuste la altura del campo de texto */
+    min-height: 150px; /* Altura mínima */
 }
 
 #contact button {
@@ -149,6 +155,7 @@ li {
     width: 100%;
     max-width: 600px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /* Para asegurar que el botón se ajuste bien */
 }
 
 #contact button:hover {
