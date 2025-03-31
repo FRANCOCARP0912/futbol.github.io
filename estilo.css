@@ -236,3 +236,11 @@ footer a:hover {
         padding: 12px 18px;
     }
 }
+
+/* Centrar la imagen */
+img {
+    display: block;           /* Hace que la imagen se trate como un elemento de bloque */
+    margin: 20px auto;        /* Centra la imagen horizontalmente y le da un margen superior e inferior */
+    max-width: 100%;          /* Hace que la imagen no se desborde del contenedor */
+    height: auto;             /* Mantiene la proporción de la imagen */
+}
