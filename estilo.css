@@ -50,9 +50,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFFFFF; /* Amarillo suave */
+    color: #8c3c2f; /* Rojo más oscuro */
     transform: scale(1.1);
-    background-color: rgba(255, 180, 0, 0.2); /* Fondo amarillo suave */
+    background-color: rgba(178, 77, 57, 0.2); /* Rojo más oscuro con opacidad */
 }
 
 /* Sección principal */
